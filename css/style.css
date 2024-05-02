@@ -105,13 +105,14 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    background-color: white;
+    /* z-index: 1; da fare alla fine con le onde*/
     /* debug */
     border: 1px dashed black;
-    background-color: brown;
-
 }
+
 section .mainContainer{
-    z-index: 10;
+    /* z-index: 1; da fare alla fine con le onde*/
 
     /* debug */
     height: 90%;
@@ -136,9 +137,15 @@ section .mainContainer{
     background-color: #FFC0CB;
     border: 1px dashed black;
 }
+
+/* da fare alla fine
+
+
 .containterWave{
     position: relative
 }
+
+
 .wave.white{
     background-color: white;
     width: 50%;
@@ -147,7 +154,18 @@ section .mainContainer{
     position: absolute;
     top: 102%;
     left: 0;
-
+    z-index: 1; da fare alla fine con le onde
 }
+
+.wave.grey{
+    background-color: #D3D3D3;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 102%;
+    left: 0;
+    z-index: 2;
+} */
 
 
