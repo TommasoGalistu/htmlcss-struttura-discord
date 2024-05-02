@@ -58,6 +58,7 @@ button{
 #contenitoreNavigazione .barraNavigazione{
     height: 1.8rem;
     display: flex;
+    color: white;
     /* regole debug */
     background-color: #DAA520;
     
@@ -68,16 +69,18 @@ button{
     height: 100%;
     display: flex;
     align-items: center;
-    
     /* debug */
 }
 
-.lateraliMenu{
-    width: 25%;
+.menuLaterali{
+    flex-grow: 2;
 }
 
+
 .listaMenu{
-    width: 50%;
+    flex-grow: 2;
+    
+    
     
 }
 
@@ -89,8 +92,14 @@ button{
     
 }
 
-.barraNavigazione .lateraliMenu:last-child{
+
+.barraNavigazione .menuLaterali:last-child{
     justify-content: flex-end;
+    
+}
+
+.whiteButton{
+    color: black;
 }
 
 /* seconda parte header */
@@ -99,6 +108,7 @@ button{
     margin: auto;
     margin-bottom: 1.5rem;
     text-align: center;
+    color: white;
     /* debug */
     background-color: #EE82EE;
     /* height: 60%; */
@@ -107,6 +117,11 @@ button{
 
 .interlineeHeader{
     margin: 0.5rem;
+}
+
+.blackButton{
+    background-color: black;
+    color: white;
 }
 
 /* inizio parte main */
@@ -135,7 +150,7 @@ div .posizioneContenitori{
     
 }
 
-.oddSection .containerRight{
+.oddSection .containerLeft{
     height: 100%;
     width: 60%;
     /* DEBUG */
@@ -144,25 +159,25 @@ div .posizioneContenitori{
     
 }
 
-.oddSection .containerLeft{
+.oddSection .containerRight{
     height: 100%;
     width: 40%;
     /* DEBUG */
     background-color: #FFC0CB;
     border: 1px dashed black;
-}
-
-.pairSection .containerRight{
-    
-    height: 100%;
-    width: 40%;
-    /* DEBUG */
-    background-color: #FFC0CB;
-    border: 1px dashed black;
-    
 }
 
 .pairSection .containerLeft{
+    
+    height: 100%;
+    width: 40%;
+    /* DEBUG */
+    background-color: #FFC0CB;
+    border: 1px dashed black;
+    
+}
+
+.pairSection .containerRight{
     height: 100%;
     width: 60%;
     /* DEBUG */
@@ -234,7 +249,7 @@ footer .posizioneContenitori{
 
 }
 
-.posizioneContenitori button{
+.colorBlue{
     background-color: #8EA1E1;
     color: white;
 }
