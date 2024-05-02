@@ -117,9 +117,8 @@ section.oddSection{
 section.pairSection{
     background-color: #D3D3D3;
 }
-section .mainContainer{
+section .posizioneContenitori{
     height: 90%;
-    width: 61%;
     display: flex;
     /* debug */
     
@@ -162,6 +161,15 @@ section .mainContainer{
     border: 1px dashed black;
 }
 
+.pairSection.ultimaSection{
+    height: 40rem;
+    background-color: #D3D3D3;
+}
+
+.ultimaSection .posizioneContenitori{
+    height: 90%;
+    background-color: #228B22;
+}
 /* da fare alla fine
 
 
