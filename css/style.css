@@ -104,13 +104,14 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
     /* debug */
     border: 1px dashed black;
     background-color: brown;
 
 }
 section .mainContainer{
-
+    z-index: 10;
 
     /* debug */
     height: 90%;
@@ -134,9 +135,19 @@ section .mainContainer{
     /* DEBUG */
     background-color: #FFC0CB;
     border: 1px dashed black;
+}
+.containterWave{
+    position: relative
+}
+.wave.white{
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 102%;
+    left: 0;
 
-    
-    
 }
 
 
