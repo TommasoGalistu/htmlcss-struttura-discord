@@ -6,10 +6,11 @@
 
 /* style delle macro sezioni */
 
+
 header{
     height: 19rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     /* regole debug */
     background-color: #00008B;
     width: 100%;
@@ -17,12 +18,22 @@ header{
 }
 
 main{
-    height: 45rem;
+    height: auto;
     width: 100%;
     /* regole debug */
     background-color: yellow;
     
 }
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* debug */
+    height: 19rem;
+}
+
 button{
     border-radius: 18px;
     padding: 0.5rem 0.8rem ;
@@ -30,6 +41,9 @@ button{
     font-weight: 600;
 } 
 
+.posizioneContenitori{
+    width: 61%;
+}
 /* style più dettagliate */
 
 #contenitoreNavigazione{
@@ -43,9 +57,6 @@ button{
     
 }
 
-.posizioneContenitori{
-    width: 61%;
-}
 #contenitoreNavigazione .barraNavigazione{
     height: 1.8rem;
     display: flex;
@@ -84,6 +95,7 @@ button{
     justify-content: flex-end;
 }
 
+/* seconda parte header */
 #contDownloadDiscord{
     width: 50%;
     margin: auto;
@@ -99,30 +111,29 @@ button{
     margin: 0.5rem;
 }
 
-section{
+/* inizio parte main */
+main > div{
     height: 19rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* z-index: 1; da fare alla fine con le onde*/
     /* debug */
     border: 1px dashed black;
 }
 
-section.oddSection{
+div.oddSection{
     background-color: white;
 }
 
-section.pairSection{
+div.pairSection{
     background-color: #D3D3D3;
 }
-section .posizioneContenitori{
+
+div .posizioneContenitori{
     height: 90%;
     display: flex;
     /* debug */
-    
-    /* z-index: 1; da fare alla fine con le onde*/
     
 }
 
@@ -170,6 +181,14 @@ section .posizioneContenitori{
     height: 90%;
     background-color: #228B22;
 }
+
+footer div{
+    height: 10rem;
+    width: 5rem;
+    background-color: #F08080;
+    display: flex;
+}
+
 /* da fare alla fine
 
 
