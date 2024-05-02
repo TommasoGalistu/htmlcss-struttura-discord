@@ -7,7 +7,9 @@
 /* style delle macro sezioni */
 
 header{
-    height: 17rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
     /* regole debug */
     background-color: #00008B;
     width: 100%;
@@ -18,15 +20,17 @@ button{
     border-radius: 18px;
     padding: 0,3rem 0,8rem;
     border: none;
-}
+    /* modificare spazio interno */
+} 
 
 /* style più dettagliate */
 
 #contenitoreNavigazione{
-    height: 3rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
     /* regole debug */
     background-color: #ADD8E6;
     
@@ -72,5 +76,21 @@ button{
 .barraNavigazione .lateraliMenu:last-child{
     justify-content: flex-end;
 }
+
+#contDownloadDiscord{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    /* debug */
+    background-color: #EE82EE;
+    /* height: 60%; */
+    border:1px dashed black;
+}
+
+.interlineeHeader{
+    margin: 0.5rem;
+}
+
 
 
