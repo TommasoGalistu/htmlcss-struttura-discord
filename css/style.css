@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style delle macro sezioni */
+
+header{
+    height: 17rem;
+    /* regole debug */
+    background-color: #00008B;
+    width: 100%;
+    
+}
+
+button{
+    border-radius: 18px;
+    padding: 0,3rem 0,8rem;
+    border: none;
+}
+
+/* style più dettagliate */
+
+#barraNavigazione{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* regole debug */
+    background-color: #ADD8E6;
+    
+}
+
+.posizioneContenitori{
+    width: 61%;
+}
+#barraNavigazione .menuPrincipale{
+    height: 1.8rem;
+    display: flex;
+    /* regole debug */
+    background-color: #DAA520;
+    
+}
+
+.menuPrincipale div{
+    border:1px dashed black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    /* debug */
+}
+
+.lateraliMenu{
+    width: 25%;
+}
+
+.listaMenu{
+    width: 50%;
+    
+}
+
+.listaMenu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* controllare dopo perchè non funziona lo space-around */
+    
+}
+
+.menuPrincipale .lateraliMenu:last-child{
+    justify-content: flex-end;
+}
+
+
