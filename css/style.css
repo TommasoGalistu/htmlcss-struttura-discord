@@ -104,24 +104,30 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
-    background-color: white;
+    flex-direction: column;
     /* z-index: 1; da fare alla fine con le onde*/
     /* debug */
     border: 1px dashed black;
 }
 
-section .mainContainer{
-    /* z-index: 1; da fare alla fine con le onde*/
+section.oddSection{
+    background-color: white;
+}
 
-    /* debug */
+section.pairSection{
+    background-color: #D3D3D3;
+}
+section .mainContainer{
     height: 90%;
     width: 61%;
     display: flex;
+    /* debug */
+    
+    /* z-index: 1; da fare alla fine con le onde*/
     
 }
 
-.containerRight{
+.oddSection .containerRight{
     height: 100%;
     width: 60%;
     /* DEBUG */
@@ -130,11 +136,29 @@ section .mainContainer{
     
 }
 
-.containerLeft{
+.oddSection .containerLeft{
     height: 100%;
     width: 40%;
     /* DEBUG */
     background-color: #FFC0CB;
+    border: 1px dashed black;
+}
+
+.pairSection .containerRight{
+    
+    height: 100%;
+    width: 40%;
+    /* DEBUG */
+    background-color: #FFC0CB;
+    border: 1px dashed black;
+    
+}
+
+.pairSection .containerLeft{
+    height: 100%;
+    width: 60%;
+    /* DEBUG */
+    background-color: #1E90FF;
     border: 1px dashed black;
 }
 
