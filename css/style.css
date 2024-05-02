@@ -7,22 +7,11 @@
 /* style delle macro sezioni */
 
 
-header{
-    height: 19rem;
-    display: flex;
-    flex-direction: column ;
-    /* regole debug */
-    background-color: #00008B;
-    width: 100%;
-    
-}
+
 
 main{
     height: auto;
     width: 100%;
-    /* regole debug */
-    background-color: yellow;
-    
 }
 
 footer{
@@ -39,10 +28,18 @@ button{
     font-weight: 600;
 } 
 
-.posizioneContenitori{
-    width: 61%;
-}
+
 /* style più dettagliate */
+
+header{
+    height: 19rem;
+    display: flex;
+    flex-direction: column ;
+    /* regole debug */
+    background-color: #00008B;
+    width: 100%;
+    
+}
 
 #contenitoreNavigazione{
     height: 5rem;
@@ -53,6 +50,10 @@ button{
     /* regole debug */
     background-color: #ADD8E6;
     
+}
+
+.posizioneContenitori{
+    width: 61%;
 }
 
 #contenitoreNavigazione .barraNavigazione{
@@ -76,20 +77,17 @@ button{
     flex-grow: 2;
 }
 
-
 .listaMenu{
     flex-grow: 2;
-    
-    
-    
+     
 }
 
 .listaMenu ul{
-    list-style-type: none;
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
     /* controllare dopo perchè non funziona lo space-around */
-    
+   
 }
 
 
@@ -111,7 +109,7 @@ button{
     color: white;
     /* debug */
     background-color: #EE82EE;
-    /* height: 60%; */
+    
     border:1px dashed black;
 }
 
@@ -131,12 +129,60 @@ main > div{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
     /* debug */
     border: 1px dashed black;
 }
 
+.wave {
+    background: #0099ff; /* Sostituisci con il colore di sfondo desiderato */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.second {
+    background: #fff; /* Sostituisci con il colore di sfondo desiderato */
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+/* .containterWave .white{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 20rem;
+    left: -6rem;
+    z-index: 1;
+}
+
+.containterWave .grey{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 32rem;
+    left: 32rem;
+    z-index: 1;
+}
+
+.containterWave .second.white{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 20rem;
+    left: 70rem;
+    z-index: 1;
+} */
+
+
+
+
 div.oddSection{
     background-color: white;
+    
+    
 }
 
 div.pairSection{
@@ -146,6 +192,7 @@ div.pairSection{
 div .posizioneContenitori{
     height: 90%;
     display: flex;
+    z-index: 2; 
     /* debug */
     
 }
@@ -255,34 +302,6 @@ footer .posizioneContenitori{
 }
 
 
-/* da fare alla fine
 
-
-.containterWave{
-    position: relative
-}
-
-
-.wave.white{
-    background-color: white;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    position: absolute;
-    top: 102%;
-    left: 0;
-    z-index: 1; da fare alla fine con le onde
-}
-
-.wave.grey{
-    background-color: #D3D3D3;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    position: absolute;
-    top: 102%;
-    left: 0;
-    z-index: 2;
-} */
 
 
