@@ -16,11 +16,18 @@ header{
     
 }
 
+main{
+    height: 45rem;
+    width: 100%;
+    /* regole debug */
+    background-color: yellow;
+    
+}
 button{
     border-radius: 18px;
     padding: 0.5rem 0.8rem ;
     border: none;
-    font-weight: 100;
+    font-weight: 600;
 } 
 
 /* style più dettagliate */
@@ -92,5 +99,44 @@ button{
     margin: 0.5rem;
 }
 
+section{
+    height: 19rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* debug */
+    border: 1px dashed black;
+    background-color: brown;
+
+}
+section .mainContainer{
+
+
+    /* debug */
+    height: 90%;
+    width: 61%;
+    display: flex;
+    
+}
+
+.containerRight{
+    height: 100%;
+    width: 60%;
+    /* DEBUG */
+    background-color: #1E90FF;
+    border: 1px dashed black;
+    
+}
+
+.containerLeft{
+    height: 100%;
+    width: 40%;
+    /* DEBUG */
+    background-color: #FFC0CB;
+    border: 1px dashed black;
+
+    
+    
+}
 
 
